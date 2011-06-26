@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            adaptable="true"
+            objectClass="org.eclipse.jdt.core.IJavaProject"
+            nameFilter="*"
+            id="manifestexcludes.contribution1">
+         <action
+               label="Refresh OSGi export restrictions"
+               class="manifestexcludes.OSGiRefreshAction"
+               menubarPath="additions"
+               enablesFor="+"
+               id="manifestexcludes.addRemoveNatureAction">
+         </action>
+      </objectContribution>
+   </extension>
+</plugin>
